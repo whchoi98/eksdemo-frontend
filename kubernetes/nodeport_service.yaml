@@ -14,4 +14,3 @@ spec:
       nodePort: 30081
       port: 80
       targetPort: 3000
-
