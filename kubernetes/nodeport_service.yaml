@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ecsdemo-frontend
+#name space change 
+  namespace: nodeport-test
+spec:
+  selector:
+    app: ecsdemo-frontend
+#Service Type change
+  type: NodePort
+  ports:
+   -  protocol: TCP
+      nodePort: 30081
+      port: 80
+      targetPort: 3000
+
