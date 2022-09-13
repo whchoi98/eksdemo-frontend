@@ -36,4 +36,4 @@ spec:
           value: "http://ecsdemo-nodejs.clb-test.svc.cluster.local/"
 #add nodeSelector
       nodeSelector:
-        nodegroup-type: "frontend-workloads"
+        nodegroup-type: "managed-frontend-workloads"
